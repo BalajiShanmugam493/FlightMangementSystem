@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+    
+	 <package name="default" extends="struts-default" namespace="/">
+		<action name="CreateAction" class="com.servlet.CreateAction">
+			<result name = "success1">/create.jsp</result>
+			<result name = "success2">/read.jsp</result>
+			<result name = "success3">/update.jsp</result>
+			<result name = "success4">/delete.jsp</result>
+			<result name = "success5">/search.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name="CreateEntryPassengerAction" class="com.servlet.CreateEntryPassengerAction">
+			<result name = "success">/create.jsp</result>
+			<result name = "error">/error.jsp</result>
+			<result name = "failure">/notickets.jsp</result>
+		</action>
+		
+		<action name="CreateEntryCountryAction" class="com.servlet.CreateEntryCountryAction">
+			<result name = "success">/create.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name="CreateEntryFlightAction" class="com.servlet.CreateEntryFlightAction">
+			<result name = "success">/create.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name="CreateEntryTerminalAction" class="com.servlet.CreateEntryTerminalAction">
+			<result name = "success">/create.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name="ReadAction" class="com.servlet.ReadAction">
+			<result name = "success">/read.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name="UpdateAction" class="com.servlet.UpdateAction">
+			<result name = "success1">/updatepassenger.jsp</result>
+			<result name = "success2">/updateflight.jsp</result>
+			<result name = "success3">/updateterminal.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name="UpdatePassengerAction" class="com.servlet.UpdatePassengerAction">
+			<result name = "success">/update.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name="UpdateTerminalAction" class="com.servlet.UpdateTerminalAction">
+			<result name = "success">/update.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name="UpdateFlightAction" class="com.servlet.UpdateFlightAction">
+			<result name = "success">/update.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name= "DeleteAction" class="com.servlet.DeleteAction">
+			<result name = "success">/delete.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name= "SearchByFlightAction" class = "com.servlet.SearchByFlightAction">
+			<result name = "success">/searchresults.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name= "SearchByDestinationAction" class = "com.servlet.SearchByDestinationAction">
+			<result name = "success">/searchresults.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name= "SearchByFromAction" class = "com.servlet.SearchByFromAction">
+			<result name = "success">/searchresults.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name = "SearchByPassengerNameAction" class = "com.servlet.SearchByPassengerNameAction">
+			<result name = "success">/searchresults.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name = "SearchByPassengerIdAction" class = "com.servlet.SearchByPassengerIdAction">
+			<result name = "success">/searchresults.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name = "SearchByFlightFromAndDestinationAction" class = "com.servlet.SearchByFlightFromAndDestinationAction">
+			<result name = "success">/searchresults.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name = "SearchByPassengerFromAndDestinationAction" class = "com.servlet.SearchByPassengerFromAndDestinationAction">
+			<result name = "success">/searchresults.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+	
+	
+		<action name = "SearchByCostAction" class = "com.servlet.SearchByCostAction">
+			<result name = "success">/costpage.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action>
+		
+		<action name = "SearchByFlightIdAction" class = "com.servlet.SearchByFlightIdAction">
+			<result name = "success">/searchresults.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action> 
+		
+		<action name = "CreateNewLocationAction" class = "com.servlet.CreateNewLocationAction">
+			<result name = "success">/create.jsp</result>
+			<result name = "error">/error.jsp</result>
+		</action> 
+	</package> 
+</struts>

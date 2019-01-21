@@ -1,7 +1,6 @@
 # FlightMangementSystem
 
-It is done using Struts2.The main objective is to learn about the back end.The front end is just a blunt page so it will be not
-impressive.The back end is done with struts2 with java database connectivity.The database is mysql.The main functions are
+It is done using Struts2.The main objective is to learn about the back end.The back end is done with struts2 with java database connectivity.The database is mysql.The main functions are
          1 . create flights
          2 . read flights
          3 . update flight deatils
